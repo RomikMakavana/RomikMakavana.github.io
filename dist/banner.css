@@ -1,5 +1,7 @@
 .banner-section{
 	height: 100%;
+	width: 100%;
+	margin: auto;
 }
 
 .banner-section .image-container{
