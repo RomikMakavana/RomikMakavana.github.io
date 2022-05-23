@@ -1,0 +1,63 @@
+.contact-us-section{
+	margin: 20px;
+    /* height: 100%; */
+    margin: auto;
+    padding-top: 60px;
+}
+.contact-us-section h3{
+	text-transform: capitalize;
+    font-weight: 600;
+    opacity: 0.7;
+    font-size: 5em;
+}
+
+.contact-us-form input, .contact-us-form textarea{
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: white;
+    font-size: 14px;
+    text-transform: initial;
+    outline: none;
+    transition: border-color .2s;
+    font-size: 2em;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.contact-us-form input::placeholder,
+.contact-us-form textarea::placeholder {
+    color: rgb(238, 237, 237);
+}
+.contact-us-form input:focus,
+.contact-us-form textarea:focus {
+    border-bottom-color: #ddd;
+    background-color: transparent;
+}
+.submit-btn{
+    border: none !important;
+    cursor: pointer !important;
+    outline: none !important;
+    background: gray !important;
+}
+  
+@media (max-width: 768px) {
+    
+}
+
+@media (min-width: 1980px){
+    .project-section h3{
+        font-size: 7em;
+    }
+    .project-list .project-block h4{
+        font-size: 3em;
+    }
+    .project-list .project-block h4 span{
+        font-size: larger;
+    }
+    .project-list .project-block p{
+        font-size: 3em;
+    }
+}
