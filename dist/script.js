@@ -5,9 +5,13 @@ var $nav = $('nav');
 
 
 // toggle menu 
-$header_top.find('a').on('click', function() {
+$header_top.find('a').on('click', function () {
   $(this).parent().toggleClass('open-menu');
 });
+
+function closeMenu() {
+  $header_top.find('a').parent().removeClass('open-menu').addClass('close-menu');
+}
 
 
 
@@ -20,25 +24,25 @@ var fullpageSlide = new fullpage("#fullpage", {
   navigation: true,
   slidesNavigation: true,
   controlArrows: false,
-  anchors: ['romikMakavana', 'aboutSection', 'projectsSection', 'experienceSection', 'blogsSection', 'contactUsSection'],
+  anchors: ['romikMakavana', 'aboutSection', 'experienceSection', 'projectsSection', 'blogsSection', 'contactUsSection'],
   menu: '#menu',
 
-  afterLoad: function(anchorLink, index) {
+  afterLoad: function (anchorLink, index) {
     $header_top.css('background', 'rgba(0, 47, 77, .3)');
     $nav.css('background', 'rgba(0, 47, 77, .25)');
     if (index == 5) {
-        $('#fp-nav').hide();
-      }
+      $('#fp-nav').hide();
+    }
   },
 
-  onLeave: function(index, nextIndex, direction) {
-    if(index == 5) {
+  onLeave: function (index, nextIndex, direction) {
+    if (index == 5) {
       $('#fp-nav').show();
     }
   },
 
-  afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex) {
-    if(anchorLink == 'fifthSection' && slideIndex == 1) {
+  afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
+    if (anchorLink == 'fifthSection' && slideIndex == 1) {
       $.fn.fullpage.setAllowScrolling(false, 'up');
       $header_top.css('background', 'transparent');
       $nav.css('background', 'transparent');
@@ -55,13 +59,49 @@ var fullpageSlide = new fullpage("#fullpage", {
     }
   },
 
-  onSlideLeave: function( anchorLink, index, slideIndex, direction) {
-    if(anchorLink == 'fifthSection' && slideIndex == 1) {
+  onSlideLeave: function (anchorLink, index, slideIndex, direction) {
+    if (anchorLink == 'fifthSection' && slideIndex == 1) {
       $.fn.fullpage.setAllowScrolling(true, 'up');
       $header_top.css('background', 'rgba(0, 47, 77, .3)');
       $nav.css('background', 'rgba(0, 47, 77, .25)');
     }
-  } 
+  }
 });
 
-console.log("fullpageSlide", fullpageSlide);
+function setHttpData(apiUrl, method, data) {
+  let req = {
+      url: apiUrl,
+      method: method,
+      data: data
+  };
+  return req;
+}
+
+function extractContent(s) {
+  var div = document.createElement('div');
+  div.innerHTML = s;
+  return div.textContent || div.innerText;
+};
+
+var app = angular.module('app', ['ngSanitize']);
+app.controller('blogCtrl', function ($scope, $http) { 
+  $scope.blogs = [];
+  $scope.background = (image) => {
+    return {background: `url(${image})`};
+  }
+  $http(setHttpData('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fromik-mk.medium.com%2Ffeed', 'GET', {}))
+    .then(function(response) {
+
+      if(response && response.data && response.data.status == 'ok'){
+        if(Array.isArray(response.data.items)){
+          let items = response.data.items;
+          items = items.map(item => {
+            item.details = extractContent(item.description).substr(0, 330) + "...";
+            return item;
+          })
+          $scope.blogs = items;
+        }
+      }
+
+    }, er => {});
+});

@@ -196,15 +196,22 @@ nav {
 	position: fixed;
 	top: 70px;
 	width: 100%;
-	transition: all 3s;
+	transition: all 700ms linear;
 }
 
 .open-menu~nav {
-	opacity: 1;
-	padding: 80px 0;
-	z-index: 15;
-	height: calc(90vh - 70px);
+	opacity: 1 !important;
+	padding: 80px 0 !important;
+	z-index: 15 !important;
+	height: calc(90vh - 70px) !important;
 }
+.close-menu~nav {
+	opacity: 0;
+    padding: 0;
+    z-index: 0;
+    height: 0;
+}
+
 
 nav ul {
 	padding: 0 10px;
@@ -225,24 +232,28 @@ nav li a {
 
 nav li:nth-child(odd) a,
 body.fp-viewing-fifthSection-1 #menu li:nth-child(5) a {
-	background: #962D3E;
+	background: #8a7562;
 }
 
 nav li:nth-child(even) a {
-	background: #aa3346;
+	background: #8a7562;
 }
 
 nav li:nth-child(odd) a:hover {
-	background: #9e2f41;
+	background: #6c5b4d;
+    color: white;
+    text-decoration: none;
 }
 
 nav li:nth-child(even) a:hover {
-	background: #c53c52;
+	background: #6c5b4d;
+    color: white;
+    text-decoration: none;
 }
 
 nav li.active a,
 body.fp-viewing-fifthSection-1 #menu li:last-child a {
-	background: #453659;
+	background: #342c26;
 }
 
 
@@ -345,9 +356,14 @@ h3 {
 .banner-section,
 .experience-section,
 .project-section,
-.contact-us-section
+.contact-us-section,
+.blog-section
 {max-width: 1980px;}
 
 .fp-watermark{
 	display: none;
+}
+h1.heading-logo a{
+	text-decoration: none;
+	color: white;
 }

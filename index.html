@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="./dist/experience.css">
   <link rel="stylesheet" href="./dist/projects.css">
   <link rel="stylesheet" href="./dist/contact-us.css">
+  <link rel="stylesheet" href="./dist/blogs.css">
 
 </head>
 
@@ -22,7 +23,7 @@
   <!-- partial:index.partial.html -->
   <header>
     <div class="header-top clearfix">
-      <h1 class="l-left"><a href="#romikMakavana">Romik Makavana</a></h1>
+      <h1 class="l-left heading-logo"><a href="#romikMakavana">Romik Makavana</a></h1>
       <a class="l-right toggle-menu" href="#">
         <i></i>
         <i></i>
@@ -33,28 +34,28 @@
     <nav class="hide">
       <ul id="menu">
         <li data-menuanchor="romikMakavana">
-          <a href="#romikMakavana" title="First Section">Romik Makavana</a>
+          <a href="#romikMakavana" onclick="closeMenu()" title="First Section">Romik Makavana</a>
         </li>
         <li data-menuanchor="aboutSection">
-          <a href="#aboutSection" title="Second Section">About</a>
+          <a href="#aboutSection" onclick="closeMenu()" title="Second Section">About</a>
         </li>
         <li data-menuanchor="projectsSection">
-          <a href="#projectsSection" title="Second Section">Projects</a>
+          <a href="#projectsSection" onclick="closeMenu()" title="Second Section">Projects</a>
         </li>
         <li data-menuanchor="experienceSection">
-          <a href="#experienceSection" title="Fourth Section">Experience</a>
+          <a href="#experienceSection" onclick="closeMenu()" title="Fourth Section">Experience</a>
         </li>
         <li data-menuanchor="blogsSection">
-          <a href="#blogsSection" title="Second Slide">Blog</a>
+          <a href="#blogsSection" onclick="closeMenu()" title="Second Slide">Blog</a>
         </li>
         <li data-menuanchor="contactUsSection">
-          <a href="#contactUsSection" title="Second Slide">Contact Us</a>
+          <a href="#contactUsSection" onclick="closeMenu()" title="Second Slide">Contact Us</a>
         </li>
       </ul>
     </nav>
   </header>
 
-  <div id="fullpage">
+  <div id="fullpage" ng-app="app">
     <section class="vertical-scrolling">
       <div class="row banner-section">
         <div class="col-md-8 col-12 d-flex banner-content-seciton">
@@ -126,10 +127,10 @@
             </ul>
           </div>
         </div>
-        <div class="col-md-4 col-12 banner-image-section">
+        <div class="col-md-4 col-12 banner-image-section pr-0">
           <div class="image-blur-section"></div>
           <div class="image-container">
-            <div class="image-block" style="background: url(./images/banner-3.jpg);">
+            <div class="image-block" style="background: url(./images/banner-4.jpg);">
             </div>
           </div>
         </div>
@@ -359,6 +360,26 @@
         </div>
       </div>
     </section>
+    <section class="vertical-scrolling d-flex" ng-controller="blogCtrl">
+      <div class="row blog-section">
+        <div class="col-12 introduce-block p-4">
+          <h3>Blogs</h3>
+          <div class="blog-list row w-100">
+            <div ng-repeat="(k, blog) in blogs" class="blog-block col-12 me-5 w-100 row">
+              <div class="blog-content col-9">
+                <a href="{{blog.link}}" target="_blank">
+                  <h4 ng-bind-html="blog.title"></h4>
+                </a>
+                <p ng-bind-html="blog.details"></p>
+              </div>
+              <div class="blog-image col-3">
+                <div ng-style="background(blog.thumbnail)"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- <section class="vertical-scrolling">
       <div class="horizontal-scrolling">
         <h2>fullPage.js</h2>
@@ -406,6 +427,9 @@
   <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js'></script>
   <script src='scripts/fullpage.min.js'></script>
+
+  <script src="./scripts/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-sanitize.js"></script>
 
   <script src="./dist/script.js"></script>
 
