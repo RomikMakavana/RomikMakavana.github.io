@@ -38,8 +38,17 @@
     /* background-size: cover !important; */
 }
 
-@media (max-width: 768px) {
-    
+@media (max-width: 480px) {
+    .blog-list .blog-block h4{
+        letter-spacing: initial;
+    }
+    .blog-list .blog-block p{
+        letter-spacing: initial;
+    }
+    .blog-list{
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 @media (min-width: 1980px){

@@ -366,13 +366,13 @@
           <h3>Blogs</h3>
           <div class="blog-list row w-100">
             <div ng-repeat="(k, blog) in blogs" class="blog-block col-12 me-5 w-100 row">
-              <div class="blog-content col-9">
+              <div class="blog-content col-md-9 col-12">
                 <a href="{{blog.link}}" target="_blank">
                   <h4 ng-bind-html="blog.title"></h4>
                 </a>
                 <p ng-bind-html="blog.details"></p>
               </div>
-              <div class="blog-image col-3">
+              <div class="blog-image col-md-3 col-12">
                 <div ng-style="background(blog.thumbnail)"></div>
               </div>
             </div>
