@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css'> -->
   <link rel='stylesheet' href='./styles/fullpage.min.css'>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
   <link href="./bootstrap-4.0.0-dist/css/bootstrap.min.css" media="all" type="text/css" rel="stylesheet">
   <link rel="stylesheet" href="./dist/style.css">
@@ -434,20 +435,16 @@
   <script src="./dist/script.js"></script>
 
   <script type="text/javascript">
-    (function () {
+   (function () {
       // https://dashboard.emailjs.com/admin/account
-      emailjs.init('VFV9gbCVhYGuLmVm_');
+      emailjs.init('R8DSE5-jDnfP14xh1');
     })();
-  </script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script>
     window.onload = function () {
       document.getElementById('contact-form').addEventListener('submit', function (e) {
         e.preventDefault();
 
-        const serviceID = "service_84tjytt";
-        const templateID = "template_00805by";
-
+        const serviceID = "service_cxdr9ll";
+        const templateID = "template_3k1cwfl";
 
         emailjs.sendForm(serviceID, templateID, this).then(
           (res) => {
