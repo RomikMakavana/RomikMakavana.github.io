@@ -29,7 +29,7 @@
 
 .contact-us-form input::placeholder,
 .contact-us-form textarea::placeholder {
-    color: rgb(238, 237, 237);
+    color: rgb(126, 122, 122);
 }
 .contact-us-form input:focus,
 .contact-us-form textarea:focus {
@@ -60,4 +60,19 @@
     .project-list .project-block p{
         font-size: 3em;
     }
+}
+
+#contact-us-form {
+    background: #2c2b2b;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+
+.contect-us-content {
+    padding-top: 80px;
+}
+
+.form-control:focus{
+    color: white !important;
 }
