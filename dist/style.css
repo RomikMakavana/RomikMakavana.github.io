@@ -367,3 +367,29 @@ h1.heading-logo a{
 	text-decoration: none;
 	color: white;
 }
+
+div.home-page-container{
+    height: 100%;
+    position: relative;
+    touch-action: none;
+    transform: translate3d(0px, 0px, 0px);
+    transition: transform 700ms ease 0s;	
+}
+
+section.home-page-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+	background-color: rgb(202, 170, 141);
+	position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100vh;
+    display: block;
+}
+
+section.blog-container{
+	
+}

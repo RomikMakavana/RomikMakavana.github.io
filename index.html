@@ -22,7 +22,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YCTBQN00K5"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-YCTBQN00K5');
@@ -65,9 +65,9 @@
       </ul>
     </nav>
   </header>
-
-  <div id="fullpage" ng-app="app">
-    <section class="vertical-scrolling">
+  
+  <div id="fullpage" ng-app="app" class="home-page-container">
+    <section class="vertical-scrolling home-page-banner">
       <div class="row banner-section">
         <div class="col-md-8 col-12 d-flex banner-content-seciton">
           <div class="align-self-center banner-content p-4">
@@ -151,8 +151,6 @@
         <a href="#aboutSection" class="icon-up-open-big"></a>
       </div>
     </section>
-
-
     <section class="vertical-scrolling d-flex">
       <div class="row about-section">
         <div class="col-lg-8 col-12 introduce-block p-4">
@@ -215,7 +213,6 @@
         </div>
       </div>
     </section>
-
     <section class="vertical-scrolling d-flex">
       <div class="row experience-section">
         <div class="col-md-6 col-12 introduce-block p-4">
@@ -371,7 +368,16 @@
         </div>
       </div>
     </section>
-    <section class="vertical-scrolling d-flex" ng-controller="blogCtrl">
+    <section class="vertical-scrolling d-flex blog-container">
+      <div class="row blog-section">
+        <div class="col-12 introduce-block p-4">
+          <h3>Blogs</h3>
+          <div class="blog-list row w-100">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="vertical-scrolling d-flex blog-container" ng-controller="blogCtrl">
       <div class="row blog-section">
         <div class="col-12 introduce-block p-4">
           <h3>Blogs</h3>
@@ -390,7 +396,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- <section class="vertical-scrolling">
       <div class="horizontal-scrolling">
         <h2>fullPage.js</h2>
@@ -435,13 +441,13 @@
       </div>
     </section>
   </div>
-  
+
   <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js'></script>
   <script src='scripts/fullpage.min.js'></script>
 
-  <script src="./scripts/angular.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-sanitize.js"></script>
+  <!-- <script src="./scripts/angular.min.js"></script> -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-sanitize.js"></script> -->
 
   <script src="./dist/script.js"></script>
 
