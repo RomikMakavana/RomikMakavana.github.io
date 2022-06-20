@@ -1,326 +1,427 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Romik Makavana</title>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Romik Makavana</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css'> -->
-  <link rel='stylesheet' href='./styles/fullpage.min.css'>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+      name="viewport"
+    />
+    <meta content="Romik Makavana" name="author" />
+    <meta
+      content="Romik Makawana,Romik Makwana,B.C.A.,Makavana Romik,Romik,The implies , web Developer , Personal Details , Carrer Details , About Information , Project Work "
+      name="keywords"
+    />
+    <meta
+      content="A Full Stack Web Developer, specialist in REACT, LARAVEL, NODE JS. Databases like MYSQL, PDeveloper, MONGODB.Developing Web applications (Backend - Frontend). Also Developed Chatbot flow Editor, like Manychat from Facebook. Also have enjoyed, how does chatbot working."
+      name="description"
+    />
+    <meta content="All" name="Robots" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="English" name="language" />
+    <meta name="google-site-verification" content="KBVfcAR5Dx535C8Ps32HcEWyr4ys_nS99cX41syx1lQ" />
+    <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css'> -->
+    <link rel="stylesheet" href="./styles/fullpage.min.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
 
-  <link href="./bootstrap-4.0.0-dist/css/bootstrap.min.css" media="all" type="text/css" rel="stylesheet">
-  <link rel="stylesheet" href="./dist/style.css">
-  <link rel="stylesheet" href="./dist/banner.css">
-  <link rel="stylesheet" href="./dist/about.css">
-  <link rel="stylesheet" href="./dist/experience.css">
-  <link rel="stylesheet" href="./dist/projects.css">
-  <link rel="stylesheet" href="./dist/contact-us.css">
-  <link rel="stylesheet" href="./dist/blogs.css">
+    <link
+      href="./bootstrap-4.0.0-dist/css/bootstrap.min.css"
+      media="all"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/style.css" />
+    <link rel="stylesheet" href="./dist/banner.css" />
+    <link rel="stylesheet" href="./dist/about.css" />
+    <link rel="stylesheet" href="./dist/experience.css" />
+    <link rel="stylesheet" href="./dist/projects.css" />
+    <link rel="stylesheet" href="./dist/contact-us.css" />
+    <link rel="stylesheet" href="./dist/blogs.css" />
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YCTBQN00K5"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-YCTBQN00K5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-YCTBQN00K5');
-  </script>
+      gtag("config", "G-YCTBQN00K5");
+    </script>
+  </head>
 
-</head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <header>
+      <div class="header-top clearfix">
+        <h1 class="l-left heading-logo">
+          <a href="#romikMakavana">Romik Makavana</a>
+        </h1>
+        <a class="l-right toggle-menu" href="#">
+          <i></i>
+          <i></i>
+          <i></i>
+        </a>
+      </div>
 
-<body>
-  <!-- partial:index.partial.html -->
-  <header>
-    <div class="header-top clearfix">
-      <h1 class="l-left heading-logo"><a href="#romikMakavana">Romik Makavana</a></h1>
-      <a class="l-right toggle-menu" href="#">
-        <i></i>
-        <i></i>
-        <i></i>
-      </a>
-    </div>
+      <nav class="hide">
+        <ul id="menu">
+          <li data-menuanchor="romikMakavana">
+            <a href="#romikMakavana" onclick="closeMenu()" title="First Section"
+              >Romik Makavana</a
+            >
+          </li>
+          <li data-menuanchor="aboutSection">
+            <a href="#aboutSection" onclick="closeMenu()" title="Second Section"
+              >About</a
+            >
+          </li>
+          <li data-menuanchor="projectsSection">
+            <a
+              href="#projectsSection"
+              onclick="closeMenu()"
+              title="Second Section"
+              >Projects</a
+            >
+          </li>
+          <li data-menuanchor="experienceSection">
+            <a
+              href="#experienceSection"
+              onclick="closeMenu()"
+              title="Fourth Section"
+              >Experience</a
+            >
+          </li>
+          <li data-menuanchor="blogsSection">
+            <a href="#blogsSection" onclick="closeMenu()" title="Second Slide"
+              >Blog</a
+            >
+          </li>
+          <li data-menuanchor="contactUsSection">
+            <a
+              href="#contactUsSection"
+              onclick="closeMenu()"
+              title="Second Slide"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    <nav class="hide">
-      <ul id="menu">
-        <li data-menuanchor="romikMakavana">
-          <a href="#romikMakavana" onclick="closeMenu()" title="First Section">Romik Makavana</a>
-        </li>
-        <li data-menuanchor="aboutSection">
-          <a href="#aboutSection" onclick="closeMenu()" title="Second Section">About</a>
-        </li>
-        <li data-menuanchor="projectsSection">
-          <a href="#projectsSection" onclick="closeMenu()" title="Second Section">Projects</a>
-        </li>
-        <li data-menuanchor="experienceSection">
-          <a href="#experienceSection" onclick="closeMenu()" title="Fourth Section">Experience</a>
-        </li>
-        <li data-menuanchor="blogsSection">
-          <a href="#blogsSection" onclick="closeMenu()" title="Second Slide">Blog</a>
-        </li>
-        <li data-menuanchor="contactUsSection">
-          <a href="#contactUsSection" onclick="closeMenu()" title="Second Slide">Contact Us</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  
-  <div id="fullpage" ng-app="app" class="home-page-container">
-    <section class="vertical-scrolling home-page-banner">
-      <div class="row banner-section">
-        <div class="col-md-8 col-12 d-flex banner-content-seciton">
-          <div class="align-self-center banner-content p-4">
-            <h2>Romik Makavana</h2>
-            <h3>Full Stack Web Developer.</h3>
-            <ul class="menu-list">
-              <li><a href="#aboutSection">About</a></li>
-              <li><a href="#projectsSection">Projects</a></li>
-              <li><a href="#experienceSection">Experience</a></li>
-              <li><a href="#blogsSection">Blog</a></li>
-              <li><a href="#contactUsSection">Contact Us</a> </li>
-            </ul>
-            <ul class="social-media-list">
-              <li>
-                <!-- Github -->
-                <a href="https://github.com/RomikMakavana" target="_blank">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-                    <path
-                      d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <!-- Linked In -->
-                <a href="https://www.linkedin.com/in/romik-makavana-48794b161" target="_blank">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                    <path
-                      d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <!-- Medium -->
-                <a href="https://romik-mk.medium.com/" target="_blank">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M71.5 142.3c.6-5.9-1.7-11.8-6.1-15.8L20.3 72.1V64h140.2l108.4 237.7L364.2 64h133.7v8.1l-38.6 37c-3.3 2.5-5 6.7-4.3 10.8v272c-.7 4.1 1 8.3 4.3 10.8l37.7 37v8.1H307.3v-8.1l39.1-37.9c3.8-3.8 3.8-5 3.8-10.8V171.2L241.5 447.1h-14.7L100.4 171.2v184.9c-1.1 7.8 1.5 15.6 7 21.2l50.8 61.6v8.1h-144v-8L65 377.3c5.4-5.6 7.9-13.5 6.5-21.2V142.3z" />
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <!-- NPM -->
-                <a href="https://www.npmjs.com/~romik.m" target="_blank">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                    <path
-                      d="M288 288h-32v-64h32v64zm288-128v192H288v32H160v-32H0V160h576zm-416 32H32v128h64v-96h32v96h32V192zm160 0H192v160h64v-32h64V192zm224 0H352v128h64v-96h32v96h32v-96h32v96h32V192z" />
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <!-- Instagram -->
-                <a href="https://www.instagram.com/romikmakavana/?hl=en" target="_blank">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                    <path
-                      d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <!-- Twitter -->
-                <a href="https://twitter.com/makavana_romik" target="_blank">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
-                  </svg>
-                </a>
-              </li>
-            </ul>
+    <div id="fullpage" ng-app="app" class="home-page-container">
+      <section class="vertical-scrolling home-page-banner">
+        <div class="row banner-section">
+          <div class="col-md-8 col-12 d-flex banner-content-seciton">
+            <div class="align-self-center banner-content p-4">
+              <h2>Romik Makavana</h2>
+              <h3>Full Stack Web Developer.</h3>
+              <ul class="menu-list">
+                <li><a href="#aboutSection">About</a></li>
+                <li><a href="#projectsSection">Projects</a></li>
+                <li><a href="#experienceSection">Experience</a></li>
+                <li><a href="#blogsSection">Blog</a></li>
+                <li><a href="#contactUsSection">Contact Us</a></li>
+              </ul>
+              <ul class="social-media-list">
+                <li>
+                  <!-- Github -->
+                  <a href="https://github.com/RomikMakavana" target="_blank">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 496 512"
+                    >
+                      <path
+                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <!-- Linked In -->
+                  <a
+                    href="https://www.linkedin.com/in/romik-makavana-48794b161"
+                    target="_blank"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <!-- Medium -->
+                  <a href="https://romik-mk.medium.com/" target="_blank">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="M71.5 142.3c.6-5.9-1.7-11.8-6.1-15.8L20.3 72.1V64h140.2l108.4 237.7L364.2 64h133.7v8.1l-38.6 37c-3.3 2.5-5 6.7-4.3 10.8v272c-.7 4.1 1 8.3 4.3 10.8l37.7 37v8.1H307.3v-8.1l39.1-37.9c3.8-3.8 3.8-5 3.8-10.8V171.2L241.5 447.1h-14.7L100.4 171.2v184.9c-1.1 7.8 1.5 15.6 7 21.2l50.8 61.6v8.1h-144v-8L65 377.3c5.4-5.6 7.9-13.5 6.5-21.2V142.3z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <!-- NPM -->
+                  <a href="https://www.npmjs.com/~romik.m" target="_blank">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 576 512"
+                    >
+                      <path
+                        d="M288 288h-32v-64h32v64zm288-128v192H288v32H160v-32H0V160h576zm-416 32H32v128h64v-96h32v96h32V192zm160 0H192v160h64v-32h64V192zm224 0H352v128h64v-96h32v96h32v-96h32v96h32V192z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <!-- Instagram -->
+                  <a
+                    href="https://www.instagram.com/romikmakavana/?hl=en"
+                    target="_blank"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <!-- Twitter -->
+                  <a href="https://twitter.com/makavana_romik" target="_blank">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="col-md-4 col-12 banner-image-section pr-0">
-          <div class="image-blur-section"></div>
-          <div class="image-container">
-            <div class="image-block" style="background: url(./images/banner-3.jpg);">
+          <div class="col-md-4 col-12 banner-image-section pr-0">
+            <div class="image-blur-section"></div>
+            <div class="image-container">
+              <div
+                class="image-block"
+                style="background: url(./images/banner-3.jpg)"
+              ></div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="scroll-icon">
-        <p>Jump into the about</p>
-        <a href="#aboutSection" class="icon-up-open-big"></a>
-      </div>
-    </section>
-    <section class="vertical-scrolling d-flex">
-      <div class="row about-section">
-        <div class="col-lg-8 col-12 introduce-block p-4">
-          <div>
-            <h3>Let Me Introduce Myself</h3>
-            <div class="introdiction-content">
-              <p>
-                A Full Stack Web Developer,
-              </p>
-              <p>
-                Having great experience in <strong>React, Laravel, Node Js</strong>.
-              </p>
-              <p>
-                Integrated <strong>Vue Js, Total Js, Codeigniter, Angular CLI, Angular JS</strong>.
-              </p>
-              <p>
-                Used Databases like
-                <strong>MySql, PostgreSQL, MongoDB</strong>.
-              </p>
-              <p>
-                Third party integration like
-                <strong>Quickbooks, Paypal, Stripe, Paytab, Mesibo Chat</strong>.
-              </p>
-              <p>
-                Developing Web applications (Backend - Frontend).
-                Integrated Websocket in Node JS, To develop web chat application.
-                Also Developed Chatbot flow Editor, like Manychat from Facebook.
-                Also have enjoyed, how does chatbot working.
-              </p>
-            </div>
-          </div>
+        <div class="scroll-icon">
+          <p>Jump into the about</p>
+          <a href="#aboutSection" class="icon-up-open-big"></a>
         </div>
-        <div class="col-lg-4 col-12 p-4">
-          <div>
-            <h3>Education</h3>
-            <div class="education-list">
-              <div class="education-block">
-                <h4>MCA (2019-2021)</h4>
-                <p>B.H gardi Collage - Rajkot</p>
+      </section>
+      <section class="vertical-scrolling d-flex">
+        <div class="row about-section">
+          <div class="col-lg-8 col-12 introduce-block p-4">
+            <div>
+              <h3>Let Me Introduce Myself</h3>
+              <div class="introdiction-content">
+                <p>A Full Stack Web Developer,</p>
+                <p>
+                  Having great experience in
+                  <strong>React, Laravel, Node Js</strong>.
+                </p>
+                <p>
+                  Integrated
+                  <strong
+                    >Vue Js, Total Js, Codeigniter, Angular CLI, Angular
+                    JS</strong
+                  >.
+                </p>
+                <p>
+                  Used Databases like
+                  <strong>MySql, PostgreSQL, MongoDB</strong>.
+                </p>
+                <p>
+                  Third party integration like
+                  <strong
+                    >Quickbooks, Paypal, Stripe, Paytab, Mesibo Chat</strong
+                  >.
+                </p>
+                <p>
+                  Developing Web applications (Backend - Frontend). Integrated
+                  Websocket in Node JS, To develop web chat application. Also
+                  Developed Chatbot flow Editor, like Manychat from Facebook.
+                  Also have enjoyed, how does chatbot working.
+                </p>
               </div>
-              <div class="education-block">
-                <h4>BCA (2015-2019)</h4>
-                <p>Saurashtra University - Rajkot</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-12 p-4">
+            <div>
+              <h3>Education</h3>
+              <div class="education-list">
+                <div class="education-block">
+                  <h4>MCA (2019-2021)</h4>
+                  <p>B.H gardi Collage - Rajkot</p>
+                </div>
+                <div class="education-block">
+                  <h4>BCA (2015-2019)</h4>
+                  <p>Saurashtra University - Rajkot</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 p-4">
+            <h3>Achievements</h3>
+            <div class="education-list row w-100">
+              <div class="education-block col-auto me-5 w-100">
+                <h4>Rookie Award - July 2019</h4>
+                <span>
+                  <strong>eHeuristic Solutions</strong> Issued by Yagnesh
+                  Tatmiya & Girish Mulchandani</span
+                >
+              </div>
+              <div class="education-block col-auto me-5 w-100">
+                <h4>Google Cloud Ready Facilitator Program</h4>
+                <span>20+ skill badges in <strong>GCP</strong></span>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-12 p-4">
-          <h3>Achievements</h3>
-          <div class="education-list row w-100">
-            <div class="education-block col-auto me-5 w-100">
-              <h4>Rookie Award - July 2019</h4>
-              <span> <strong>eHeuristic Solutions</strong> Issued by Yagnesh Tatmiya & Girish Mulchandani</span>
+      </section>
+      <section class="vertical-scrolling d-flex">
+        <div class="row experience-section">
+          <div class="col-md-6 col-12 introduce-block p-4">
+            <h3>Experience</h3>
+            <div class="experience-list row w-100">
+              <div class="experience-block col-auto me-5 w-100">
+                <h4>Full Stack Developer, <span>Audace Labs</span></h4>
+                <span>May 2018 - Present</span>
+                <p>
+                  I have developed APIs in Node Js, Mongo DB. Handling Backend
+                  Frontend. Database Design, Admin Panel - Rest API - Frontend
+                </p>
+                <p>
+                  Technologies that I have worked, Stripe Subscription, React,
+                  NodeJS, Web3, Ether
+                </p>
+              </div>
+              <div class="experience-block col-auto me-5 w-100">
+                <h4>Web Developer, <span>eHeuristic Solutions</span></h4>
+                <span>May 2018 - May 2021</span>
+                <p>
+                  I had great experience with eHeuristic Solution, Worked on
+                  many project and technologies, Received *Rookiee Award* - Best
+                  fresher in company. Some of great experience with eHeuristic.
+                  Support1 - I have build chat bot flow builder in (Vue Js)
+                  Technologies - Build Websocket in Node Js, (realtime
+                  notification, group chat) Also build program in python, for
+                  automatic task update from Inbox mail.
+                </p>
+              </div>
             </div>
-            <div class="education-block col-auto me-5 w-100">
-              <h4>Google Cloud Ready Facilitator Program</h4>
-              <span>20+ skill badges in <strong>GCP</strong></span>
+          </div>
+          <div class="col-md-6 col-12 introduce-block p-4">
+            <h3>Skills</h3>
+            <div class="experience-list row w-100">
+              <div class="experience-block col-auto me-5 w-100">
+                <h4>Languages</h4>
+                <p>PHP, Javascript, Typescript, NodeJS</p>
+              </div>
+              <div class="experience-block col-auto me-5 w-100">
+                <h4>Backend Frameworks</h4>
+                <p>Laravel, Codeigniter, Yii2</p>
+                <p>Express</p>
+              </div>
+              <div class="experience-block col-auto me-5 w-100">
+                <h4>Frontend Frameworks</h4>
+                <p>React, AngularJs, Angular, VueJS, Vue3 Composition API</p>
+              </div>
+              <div class="experience-block col-auto me-5 w-100">
+                <h4>Databases</h4>
+                <p>MySql, PostgreSQL, MongoDB</p>
+              </div>
+              <div class="experience-block col-auto me-5 w-100">
+                <h4>Third Party Packages</h4>
+                <p>Web3, Ether, Websocket</p>
+                <p>Paypal, Paytab, Razorpay, Stripe Subscription</p>
+                <p>Quickbooks, Mesibo Chat</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="vertical-scrolling d-flex">
-      <div class="row experience-section">
-        <div class="col-md-6 col-12 introduce-block p-4">
-          <h3>Experience</h3>
-          <div class="experience-list row w-100">
-            <div class="experience-block col-auto me-5 w-100">
-              <h4>Full Stack Developer, <span>Audace Labs</span></h4>
-              <span>May 2018 - Present</span>
-              <p>
-                I have developed APIs in Node Js, Mongo DB.
-                Handling Backend Frontend.
-                Database Design, Admin Panel - Rest API - Frontend
-              </p>
-              <p>
-                Technologies that I have worked, Stripe Subscription, React, NodeJS, Web3, Ether
-              </p>
-            </div>
-            <div class="experience-block col-auto me-5 w-100">
-              <h4>Web Developer, <span>eHeuristic Solutions</span></h4>
-              <span>May 2018 - May 2021</span>
-              <p>
-                I had great experience with eHeuristic Solution,
-                Worked on many project and technologies,
-                Received *Rookiee Award* - Best fresher in company.
-
-                Some of great experience with eHeuristic.
-                Support1 - I have build chat bot flow builder in (Vue Js)
-                Technologies - Build Websocket in Node Js, (realtime notification, group chat)
-                Also build program in python, for automatic task update from Inbox mail.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-12 introduce-block p-4">
-          <h3>Skills</h3>
-          <div class="experience-list row w-100">
-            <div class="experience-block col-auto me-5 w-100">
-              <h4>Languages</h4>
-              <p>
-                PHP, Javascript, Typescript, NodeJS
-              </p>
-            </div>
-            <div class="experience-block col-auto me-5 w-100">
-              <h4>Backend Frameworks</h4>
-              <p> Laravel, Codeigniter, Yii2 </p>
-              <p> Express </p>
-            </div>
-            <div class="experience-block col-auto me-5 w-100">
-              <h4>Frontend Frameworks</h4>
-              <p> React, AngularJs, Angular, VueJS, Vue3 Composition API </p>
-            </div>
-            <div class="experience-block col-auto me-5 w-100">
-              <h4>Databases</h4>
-              <p> MySql, PostgreSQL, MongoDB </p>
-            </div>
-            <div class="experience-block col-auto me-5 w-100">
-              <h4>Third Party Packages</h4>
-              <p> Web3, Ether, Websocket </p>
-              <p> Paypal, Paytab, Razorpay, Stripe Subscription </p>
-              <p> Quickbooks, Mesibo Chat </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="vertical-scrolling d-flex">
-      <div class="row project-section">
-        <div class="col-12 introduce-block p-4">
-          <h3>Projects</h3>
-          <div class="project-list row w-100">
-            <div class="project-block col-md-6 col-12 me-5 w-100">
-              <h4>Cover Compared Dapp </h4>
-              <span> <a href="https://app.covercompared.com/" target="_blank">https://app.covercompared.com/</a> </span>
-              <p>API : Node Js | Frontend/Admin : React | Database : MongoDb</p>
-              <p>Recently I have worked on dApp web application
-                I am the only Backend Developer in this project.
-                I have developed all Apis in ExpressJs(NodeJs) and Mongodb database.
-                There are multiple Smart Contracts in same project,
-                I have done web3 integration in backend and watch all events smart contract events.
-                I have written well structured api code.
-                No Code Duplication.
-                All logic with Code documentation.
-                Created Postman collection with Examples, (Success/Fail).
-                All function define with code comments.</p>
-            </div>
-            <div class="project-block col-md-6 col-12 me-5 w-100">
-              <h4>Benefits4Expats</h4>
-              <span>
-                <a href="https://www.benefits4expats.com/" target="_blank">https://www.benefits4expats.com/</a>
-              </span>
-              <p>API : Node Js | Frontend/Admin : React</p>
-              <p>
-                Created B2B and B2C portal to issue insurance.
-                Integrate Stripe Subscription
-                Also has functionality of Franchise
-              </p>
-              <span>
-                <a href="https://protect.benefits4expats.com/web/b2c/"
-                  target="_blank">https://protect.benefits4expats.com/web/b2c/</a>
-              </span>
-              <br />
-              <span>
-                <a href="https://protect.benefits4expats.com/web/b2b/"
-                  target="_blank">https://protect.benefits4expats.com/web/b2b/</a>
-              </span>
-
-            </div>
-            <!-- <div class="project-block col-md-6 col-12 me-5 w-100">
+      </section>
+      <section class="vertical-scrolling d-flex">
+        <div class="row project-section">
+          <div class="col-12 introduce-block p-4">
+            <h3>Projects</h3>
+            <div class="project-list row w-100">
+              <div class="project-block col-md-6 col-12 me-5 w-100">
+                <h4>Cover Compared Dapp</h4>
+                <span>
+                  <a href="https://app.covercompared.com/" target="_blank"
+                    >https://app.covercompared.com/</a
+                  >
+                </span>
+                <p>
+                  API : Node Js | Frontend/Admin : React | Database : MongoDb
+                </p>
+                <p>
+                  Recently I have worked on dApp web application I am the only
+                  Backend Developer in this project. I have developed all Apis
+                  in ExpressJs(NodeJs) and Mongodb database. There are multiple
+                  Smart Contracts in same project, I have done web3 integration
+                  in backend and watch all events smart contract events. I have
+                  written well structured api code. No Code Duplication. All
+                  logic with Code documentation. Created Postman collection with
+                  Examples, (Success/Fail). All function define with code
+                  comments.
+                </p>
+              </div>
+              <div class="project-block col-md-6 col-12 me-5 w-100">
+                <h4>Benefits4Expats</h4>
+                <span>
+                  <a href="https://www.benefits4expats.com/" target="_blank"
+                    >https://www.benefits4expats.com/</a
+                  >
+                </span>
+                <p>API : Node Js | Frontend/Admin : React</p>
+                <p>
+                  Created B2B and B2C portal to issue insurance. Integrate
+                  Stripe Subscription Also has functionality of Franchise
+                </p>
+                <span>
+                  <a
+                    href="https://protect.benefits4expats.com/web/b2c/"
+                    target="_blank"
+                    >https://protect.benefits4expats.com/web/b2c/</a
+                  >
+                </span>
+                <br />
+                <span>
+                  <a
+                    href="https://protect.benefits4expats.com/web/b2b/"
+                    target="_blank"
+                    >https://protect.benefits4expats.com/web/b2b/</a
+                  >
+                </span>
+              </div>
+              <!-- <div class="project-block col-md-6 col-12 me-5 w-100">
               <h4>Dhofar</h4>
               <span>
                 <a href="https://besafe.dhofarinsurance.com/" target="_blank">https://besafe.dhofarinsurance.com/</a>
@@ -332,52 +433,56 @@
                 Also has functionality of Franchise
               </p>
             </div> -->
-            <div class="project-block col-md-6 col-12 me-5 w-100">
-              <h4>Support1</h4>
-              <span>
-                <a href="https://shain.ca/" target="_blank">https://shain.ca/</a>
-              </span>
-              <p>Core PHP, Vue JS</p>
-              <p>
-                Developed Chatbot flow Editor,
-                Like Manychat from Facebook,
-                Also have enjoyed, how does chatbot working,
-                In R&D also have practice in TotalJs,
-                Clear mind set about (Narratives, Intent,...)
-              </p>
-            </div>
-            <div class="project-block col-md-6 col-12 me-5 w-100">
-              <h4>AlCounselor</h4>
-              <span>
-                <a href="https://alcounselor.com/" target="_blank">https://alcounselor.com/</a>
-              </span>
-              <p>API : Node Js | Frontend : Angular CLI | Admin : Angular Js</p>
-              <p>
-                Online Freelancer site
-              </p>
-            </div>
-            <div class="project-block col-md-6 col-12 me-5 w-100">
-              <h4>Jeevanveda</h4>
-              <span>
-                <a href="http://jeevanveda.in/" target="_blank">http://jeevanveda.in/</a>
-              </span>
-              <p>API : Laravel| Web & Admin : React</p>
-              <p> Online Shopping site for medical products </p>
+              <div class="project-block col-md-6 col-12 me-5 w-100">
+                <h4>Support1</h4>
+                <span>
+                  <a href="https://shain.ca/" target="_blank"
+                    >https://shain.ca/</a
+                  >
+                </span>
+                <p>Core PHP, Vue JS</p>
+                <p>
+                  Developed Chatbot flow Editor, Like Manychat from Facebook,
+                  Also have enjoyed, how does chatbot working, In R&D also have
+                  practice in TotalJs, Clear mind set about (Narratives,
+                  Intent,...)
+                </p>
+              </div>
+              <div class="project-block col-md-6 col-12 me-5 w-100">
+                <h4>AlCounselor</h4>
+                <span>
+                  <a href="https://alcounselor.com/" target="_blank"
+                    >https://alcounselor.com/</a
+                  >
+                </span>
+                <p>
+                  API : Node Js | Frontend : Angular CLI | Admin : Angular Js
+                </p>
+                <p>Online Freelancer site</p>
+              </div>
+              <div class="project-block col-md-6 col-12 me-5 w-100">
+                <h4>Jeevanveda</h4>
+                <span>
+                  <a href="http://jeevanveda.in/" target="_blank"
+                    >http://jeevanveda.in/</a
+                  >
+                </span>
+                <p>API : Laravel| Web & Admin : React</p>
+                <p>Online Shopping site for medical products</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="vertical-scrolling d-flex blog-container">
-      <div class="row blog-section">
-        <div class="col-12 introduce-block p-4">
-          <h3>Blogs</h3>
-          <div class="blog-list row w-100">
+      </section>
+      <section class="vertical-scrolling d-flex blog-container">
+        <div class="row blog-section">
+          <div class="col-12 introduce-block p-4">
+            <h3>Blogs</h3>
+            <div class="blog-list row w-100"></div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- <section class="vertical-scrolling d-flex blog-container" ng-controller="blogCtrl">
+      </section>
+      <!-- <section class="vertical-scrolling d-flex blog-container" ng-controller="blogCtrl">
       <div class="row blog-section">
         <div class="col-12 introduce-block p-4">
           <h3>Blogs</h3>
@@ -397,7 +502,7 @@
         </div>
       </div>
     </section> -->
-    <!-- <section class="vertical-scrolling">
+      <!-- <section class="vertical-scrolling">
       <div class="horizontal-scrolling">
         <h2>fullPage.js</h2>
         <h3>This is the fifth section and it contains the first slide (actually section == first slide)</h3>
@@ -408,76 +513,102 @@
         <p class="end">Thank you!</p>
       </div>
     </section> -->
-    <section class="vertical-scrolling">
-      <div class="col-md-6 col-sm-10 m-auto  contect-us-content">
-        <div class="contact-heading m-auto">
-          <h3 class="m-auto text-center font-weight-bold">Get in Touch </h3>
+      <section class="vertical-scrolling">
+        <div class="col-md-6 col-sm-10 m-auto contect-us-content">
+          <div class="contact-heading m-auto">
+            <h3 class="m-auto text-center font-weight-bold">Get in Touch</h3>
+          </div>
+          <div>
+            <form class="m-auto m-2 contact-us-form" id="contact-us-form">
+              <div class="form-group m-3">
+                <input
+                  type="text"
+                  class="form-control p-3"
+                  name="name"
+                  id="exampleInputEmail1"
+                  placeholder="Full Name"
+                  required
+                />
+              </div>
+              <div class="form-group m-3">
+                <input
+                  type="email"
+                  class="form-control p-3"
+                  name="userEmail"
+                  id="formGroupExampleInput"
+                  placeholder="Enter Email"
+                  required
+                />
+              </div>
+              <div class="form-group m-3">
+                <input
+                  type="text"
+                  class="form-control p-3 rounded"
+                  name="subject"
+                  id="formGroupExampleInput"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+              <div class="form-group m-3">
+                <textarea
+                  class="form-control p-3 rounded"
+                  name="massage"
+                  id="exampleFormControlTextarea1"
+                  rows="2"
+                  placeholder="Massage"
+                  required
+                ></textarea>
+              </div>
+              <div class="form-group m-3">
+                <input
+                  type="submit"
+                  class="submit-btn input-label btn btn-primary w-100"
+                  id="formGroupExampleInput2 btn btn-primary "
+                  value="Send"
+                />
+              </div>
+            </form>
+          </div>
         </div>
-        <div>
-          <form class=" m-auto m-2 contact-us-form" id="contact-us-form">
-            <div class="form-group m-3">
-              <input type="text" class="form-control p-3 " name="name" id="exampleInputEmail1" placeholder="Full Name"
-                required>
-            </div>
-            <div class="form-group m-3">
-              <input type="email" class="form-control p-3 " name="userEmail" id="formGroupExampleInput"
-                placeholder="Enter Email" required>
-            </div>
-            <div class="form-group m-3">
-              <input type="text" class="form-control p-3 rounded" name="subject" id="formGroupExampleInput"
-                placeholder="Subject" required>
-            </div>
-            <div class="form-group m-3">
-              <textarea class="form-control p-3 rounded" name="massage" id="exampleFormControlTextarea1" rows="2"
-                placeholder="Massage" required></textarea>
-            </div>
-            <div class="form-group m-3 ">
-              <input type="submit" class="submit-btn input-label btn btn-primary w-100 "
-                id="formGroupExampleInput2 btn btn-primary " value="Send" />
-            </div>
+      </section>
+    </div>
 
-          </form>
-        </div>
-      </div>
-    </section>
-  </div>
+    <!-- partial -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <script src="scripts/fullpage.min.js"></script>
 
-  <!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js'></script>
-  <script src='scripts/fullpage.min.js'></script>
+    <!-- <script src="./scripts/angular.min.js"></script> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-sanitize.js"></script> -->
 
-  <!-- <script src="./scripts/angular.min.js"></script> -->
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-sanitize.js"></script> -->
+    <script src="./dist/script.js"></script>
 
-  <script src="./dist/script.js"></script>
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init("R8DSE5-jDnfP14xh1");
+      })();
+      window.onload = function () {
+        document
+          .getElementById("contact-us-form")
+          .addEventListener("submit", function (e) {
+            e.preventDefault();
 
-  <script type="text/javascript">
-    (function () {
-      // https://dashboard.emailjs.com/admin/account
-      emailjs.init('R8DSE5-jDnfP14xh1');
-    })();
-    window.onload = function () {
-      document.getElementById('contact-us-form').addEventListener('submit', function (e) {
-        e.preventDefault();
+            const serviceID = "service_cxdr9ll";
+            const templateID = "template_3k1cwfl";
 
-        const serviceID = "service_cxdr9ll";
-        const templateID = "template_3k1cwfl";
-
-        emailjs.sendForm(serviceID, templateID, this).then(
-          (res) => {
-            console.log("Success!", res.status, res.text);
-            alert("Success!");
-          },
-          (error) => {
-            console.log("FAILED...", error);
-            alert("FAILED...", error);
-          }
-        )
-      })
-
-    }
-  </script>
-
-</body>
-
+            emailjs.sendForm(serviceID, templateID, this).then(
+              (res) => {
+                console.log("Success!", res.status, res.text);
+                alert("Success!");
+              },
+              (error) => {
+                console.log("FAILED...", error);
+                alert("FAILED...", error);
+              }
+            );
+          });
+      };
+    </script>
+  </body>
 </html>
