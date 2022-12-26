@@ -1,6 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,700);
 
-
+:root {
+	--background: #b8936fd6;
+	--background-gradient: rgb(157 130 97 / 88%);
+	--white: #ffffff;
+}
 
 /* ICON STYLES - ICON FROM: http://fontastic.me/
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -14,6 +18,11 @@
 		url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/untitled-font-1.svg#untitled-font-1") format("svg");
 	font-weight: normal;
 	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Nunito-Regular';
+	src: url('./../fonts/Nunito/static/Nunito-Regular.ttf');
 }
 
 [class^="icon-"]:after,
@@ -96,7 +105,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	font-family: 'Alegreya Sans', Arial, sans-serif;
+	font-family: 'Nunito-Regular', Arial, sans-serif;
 	text-transform: uppercase;
 }
 
@@ -114,7 +123,8 @@ a {
 	color: white;
 }
 
-ul, li {
+ul,
+li {
 	list-style-type: none;
 }
 
@@ -205,11 +215,12 @@ nav {
 	z-index: 15 !important;
 	height: calc(90vh - 70px) !important;
 }
+
 .close-menu~nav {
 	opacity: 0;
-    padding: 0;
-    z-index: 0;
-    height: 0;
+	padding: 0;
+	z-index: 0;
+	height: 0;
 }
 
 
@@ -241,14 +252,14 @@ nav li:nth-child(even) a {
 
 nav li:nth-child(odd) a:hover {
 	background: #6c5b4d;
-    color: white;
-    text-decoration: none;
+	color: white;
+	text-decoration: none;
 }
 
 nav li:nth-child(even) a:hover {
 	background: #6c5b4d;
-    color: white;
-    text-decoration: none;
+	color: white;
+	text-decoration: none;
 }
 
 nav li.active a,
@@ -357,39 +368,61 @@ h3 {
 .experience-section,
 .project-section,
 .contact-us-section,
-.blog-section
-{max-width: 1980px;}
+.blog-section {
+	max-width: 1280px;
+}
 
-.fp-watermark{
+.fp-watermark {
 	display: none;
 }
-h1.heading-logo a{
+
+h1.heading-logo a {
 	text-decoration: none;
 	color: white;
 }
 
-div.home-page-container{
-    height: 100%;
-    position: relative;
-    touch-action: none;
-    transform: translate3d(0px, 0px, 0px);
-    transition: transform 700ms ease 0s;	
-}
-
-section.home-page-banner{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-	background-color: rgb(202, 170, 141);
+div.home-page-container {
+	height: 100%;
 	position: relative;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    height: 100vh;
-    display: block;
+	touch-action: none;
+	transform: translate3d(0px, 0px, 0px);
+	transition: transform 700ms ease 0s;
 }
 
-section.blog-container{
-	
+div.home-page-container .background-wrapper{
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
 }
+
+div.home-page-container .background-wrapper .row .section-1{
+	height: 100%;
+	background-color: var(--background);
+}
+div.home-page-container .background-wrapper .row .section-2{
+	height: 100%;
+	background-color: var(--background);
+}
+
+
+section.home-page-banner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 100vh;
+	display: block;
+	max-height: 100rem;
+}
+
+section.home-page-banner .banner-section {
+	max-width: 1980px;
+}
+
+section.blog-container {}
