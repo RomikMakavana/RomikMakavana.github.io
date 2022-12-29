@@ -13,7 +13,7 @@
 	left: 0;
 	height: 100%;
 	width: 100%;
-	background: linear-gradient(90deg, var(--background-gradient) 0.85%, rgba(255, 255, 255, 0) 17.31%, rgba(255, 255, 255, 0) 99.96%), linear-gradient(90deg, var(--background-gradient) 0.85%, rgba(255, 255, 255, 0) 17.31%, rgba(255, 255, 255, 0) 99.96%);
+	background: linear-gradient(270deg, var(--background-gradient) 0.85%, rgba(255, 255, 255, 0) 17.31%, rgba(255, 255, 255, 0) 99.96%), linear-gradient(270deg, var(--background-gradient) 0.85%, rgba(255, 255, 255, 0) 17.31%, rgba(255, 255, 255, 0) 99.96%);
 }
 
 @media (min-width: 1980px){
@@ -24,6 +24,7 @@
 }
 .banner-content-seciton{
 	justify-content: center;
+	background-color: var(--background-gradient);
 }
 .banner-section .banner-content h3{
 	margin-bottom: 70px;
@@ -74,6 +75,7 @@
 
 .banner-image-section{
 	position: relative;
+	padding-left: 0;
 }
 .banner-content-seciton .banner-content{
 	align-self: center;
@@ -81,6 +83,9 @@
 }
 
 @media (max-width: 768px) {
+	.banner-content-seciton{
+		background-color: transparent;
+	}
 	.banner-content-seciton  .banner-content{
 		align-self: flex-end !important;
 		position: relative;

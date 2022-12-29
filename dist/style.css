@@ -65,10 +65,13 @@
 }
 
 
+.social-icon:hover{
+	background-color: white;
+}
+
 
 /* HELPER CLASSES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
 .clearfix:before,
 .clearfix:after {
 	content: "";
@@ -116,6 +119,7 @@ html {
 body {
 	color: black;
 	letter-spacing: .18em;
+	overflow-x: hidden;
 }
 
 a {
