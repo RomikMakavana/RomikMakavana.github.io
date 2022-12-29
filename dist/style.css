@@ -335,6 +335,11 @@ h3 {
 /* MQ STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+@media screen and (max-width: 992px) {
+	.about-section-container .background-wrapper{
+		display: none;
+	}
+}
 @media screen and (max-width: 767px) {
 	nav ul {
 		flex-direction: column;
@@ -352,6 +357,13 @@ h3 {
 		display: none;
 	}
 }
+
+@media screen and (max-width: 767px) {
+	.background-wrapper {
+		display: none;
+	}
+}
+
 
 @media screen and (max-width: 400px) {
 	html {
