@@ -442,3 +442,18 @@ section.home-page-banner .banner-section {
 }
 
 section.blog-container {}
+
+.visit-site-link{
+	padding: 6px 10px;
+    background: #ffffff7a;
+    border-radius: 5px;
+	-webkit-transition: all 1s ease;  
+	-moz-transition: all 1s ease;  
+	-o-transition: all 1s ease;  
+	-ms-transition: all 1s ease;  
+	transition: all 1s ease;
+}
+
+.visit-site-link:hover{
+	background-color: white;
+}
